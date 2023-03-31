@@ -222,7 +222,7 @@
           "type": "address"
         }
       ],
-      "name": "getTotalDuartion",
+      "name": "getTotalDuration",
       "outputs": [
         {
           "internalType": "uint256",
@@ -337,5 +337,5 @@
       "type": "function"
     }
   ],
-  "contractAddress": "0x445293518cc7b8447652369C7c6Ad9Af0f23238a"
+  "contractAddress": "0xAe67DC5dB14c77bBEe4843594fc94aED9c1b1673"
 }

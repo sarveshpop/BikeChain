@@ -12,7 +12,7 @@ import { BlockchainContext } from "../context/BlockchainContext";
 import { useContext } from "react";
 
 export default function RenderForm() {
-  const { addRenter, currentAccount } = useContext(BlockchainContext)
+  const { addRenter, currentAccount } = useContext(BlockchainContext);
   const {
     handleSubmit,
     register,
@@ -20,16 +20,35 @@ export default function RenderForm() {
   } = useForm();
 
   const onSubmit = async (values) => {
-    values['canRent'] = true;
-    values['active'] = false;
-    values['balance'] = 0;
-    values['due'] = 0;
-    values['start'] = 0;
-    values['end'] = 0;
-    const newValueObject = {walletAddress: currentAccount, ...values}
-    const {walletAddress, firstName, lastName, canRent, active, balance, due, start, end} = newValueObject
-    await addRenter(walletAddress, firstName, lastName, canRent, active, balance, due, start, end)
-    
+    values["canRent"] = true;
+    values["active"] = false;
+    values["balance"] = 0;
+    values["due"] = 0;
+    values["start"] = 0;
+    values["end"] = 0;
+    const newValueObject = { walletAddress: currentAccount, ...values };
+    const {
+      walletAddress,
+      firstName,
+      lastName,
+      canRent,
+      active,
+      balance,
+      due,
+      start,
+      end,
+    } = newValueObject;
+    await addRenter(
+      walletAddress,
+      firstName,
+      lastName,
+      canRent,
+      active,
+      balance,
+      due,
+      start,
+      end
+    );
   };
 
   return (
@@ -39,27 +58,28 @@ export default function RenderForm() {
       </Text>
       <Flex justifyContent={"center"} alignItems={"center"} p={5} mt={10}>
         <form onSubmit={handleSubmit(onSubmit)}>
-          
           <FormControl isInvalid={errors.firstName && errors.lastName}>
-            <FormLabel htmlFor='firstName'>First Name</FormLabel>
+            <FormLabel htmlFor="firstName">First Name</FormLabel>
             <Input
               id="firstName"
               placeholder="First Name"
               {...register("firstName", {
                 required: "This is required",
-                minLength: {value: 4, message: "Minimum length should be 4"}
+                minLength: { value: 4, message: "Minimum length should be 4" },
               })}
             />
             <FormErrorMessage>
               {errors.firstName && errors.firstName.message}
             </FormErrorMessage>
-            <FormLabel mt={5}htmlFor='lastName'>Last Name</FormLabel>
+            <FormLabel mt={5} htmlFor="lastName">
+              Last Name
+            </FormLabel>
             <Input
               id="lastName"
               placeholder="Last Name"
               {...register("lastName", {
                 required: "This is required",
-                minLength: {value: 4, message: "Minimum length should be 4"}
+                minLength: { value: 4, message: "Minimum length should be 4" },
               })}
             />
             <FormErrorMessage>
@@ -68,7 +88,7 @@ export default function RenderForm() {
           </FormControl>
           <Button
             mt={4}
-            colorScheme="teal"
+            colorScheme="gray"
             isLoading={isSubmitting}
             type="submit"
           >

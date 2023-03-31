@@ -8,68 +8,75 @@ import {
   Icon,
   useColorModeValue,
   createIcon,
-} from '@chakra-ui/react';
-import { useNavigate } from 'react-router-dom';
+} from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 
 export default function Hero() {
-    let navigate = useNavigate();
+  let navigate = useNavigate();
 
-    const handleClick = (path) => {
-        navigate(path);
-    }
+  const handleClick = (path) => {
+    navigate(path);
+  };
   return (
     <>
-      <Container maxW={'3xl'}>
+      <Container maxW={"3xl"}>
         <Stack
           as={Box}
-          textAlign={'center'}
+          textAlign={"center"}
           spacing={{ base: 8, md: 14 }}
-          py={{ base: 20, md: 36 }}>
+          py={{ base: 20, md: 36 }}
+        >
           <Heading
             fontWeight={600}
-            fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
-            lineHeight={'110%'}>
+            fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
+            lineHeight={"110%"}
+          >
             Rent your next bike <br />
-            <Text as={'span'} color={'teal.400'}>
+            <Text as={"span"} color={"gray.400"}>
               with crypto!
             </Text>
           </Heading>
-          <Text color={'gray.500'}>
-            Connect your wallet, choose your bike, and you're off to the races. When you return it, you can easily pay your fare with ETH. And we all like those ETH gas fees!
+          <Text color={"gray.500"}>
+            Connect your wallet, choose your bike, and you're off to the races.
+            When you return it, you can easily pay your fare with ETH. And we
+            all like those ETH gas fees!
           </Text>
           <Stack
-            direction={'column'}
+            direction={"column"}
             spacing={3}
-            align={'center'}
-            alignSelf={'center'}
-            position={'relative'}>
+            align={"center"}
+            alignSelf={"center"}
+            position={"relative"}
+          >
             <Button
-              onClick={() => handleClick('dashboard')}
-              colorScheme={'teal'}
-              bg={'teal.400'}
-              rounded={'full'}
+              onClick={() => handleClick("dashboard")}
+              colorScheme={"gray"}
+              bg={"gray.400"}
+              rounded={"full"}
               px={6}
               _hover={{
-                bg: 'teal.500',
-              }}>
+                bg: "gray.500",
+              }}
+            >
               Choose My Bike
             </Button>
             <Box>
               <Icon
                 as={Arrow}
-                color={useColorModeValue('gray.800', 'gray.300')}
+                color={useColorModeValue("gray.800", "gray.300")}
                 w={71}
-                position={'absolute'}
+                position={"absolute"}
                 right={-71}
-                top={'10px'}
+                top={"10px"}
               />
               <Text
-                fontSize={'lg'}
-                fontFamily={'Caveat'}
-                position={'absolute'}
-                right={'-125px'}
-                top={'-25px'}
-                transform={'rotate(10deg)'}>
+                fontSize={"lg"}
+                fontFamily={"Caveat"}
+                position={"absolute"}
+                right={"-125px"}
+                top={"-25px"}
+                transform={"rotate(10deg)"}
+              >
                 Rent at no cost up front
               </Text>
             </Box>
@@ -81,8 +88,8 @@ export default function Hero() {
 }
 
 const Arrow = createIcon({
-  displayName: 'Arrow',
-  viewBox: '0 0 72 24',
+  displayName: "Arrow",
+  viewBox: "0 0 72 24",
   path: (
     <path
       fillRule="evenodd"

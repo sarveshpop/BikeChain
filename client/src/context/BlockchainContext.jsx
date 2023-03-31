@@ -15,7 +15,7 @@ export const BlockchainProvider = ({ children }) => {
   const [due, setDue] = useState();
   const [duration, setDuration] = useState();
 
-  const provider = new ethers.BrowserProvider(window.ethereum);
+  const provider = new ethers.providers.Web3Provider(window.ethereum);
   const signer = provider.getSigner();
 
   const address = contractAddress;
@@ -223,6 +223,7 @@ export const BlockchainProvider = ({ children }) => {
     checkRenterExists();
     getRenterBalance();
     getDue();
+    getBalance();
     getTotalDuration();
   }, [currentAccount]);
 
