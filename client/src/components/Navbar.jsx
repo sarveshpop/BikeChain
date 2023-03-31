@@ -19,6 +19,8 @@ import { Link } from "react-router-dom";
 import { BlockchainContext } from "../context/BlockchainContext";
 import { useContext } from "react";
 
+import logo from "../assets/logo.png";
+
 export default function Navbar() {
   const { connectWallet, currentAccount, renter } =
     useContext(BlockchainContext);
@@ -31,7 +33,17 @@ export default function Navbar() {
         }`}
         align={"center"}
       >
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
+        <Flex
+          flex={{ base: 1 }}
+          align={"center"}
+          justify={{ base: "center", md: "start" }}
+        >
+          <Image
+            src={logo}
+            className={`h-10 w-10 mr-2 ${
+              renter && renter.active ? "" : "  invert ;"
+            }`}
+          ></Image>
           <Text
             textAlign={useBreakpointValue({ base: "center", md: "left" })}
             fontFamily={"heading"}
@@ -47,12 +59,7 @@ export default function Navbar() {
           </Text>
         </Flex>
 
-        <Stack
-          flex={{ base: 1, md: 0 }}
-          justify={"flex-end"}
-          direction={"row"}
-          spacing={6}
-        >
+        <Stack flex={{ base: 1, md: 0 }} justify={"flex-end"} direction={"row"}>
           <Button
             onClick={connectWallet}
             display={{ md: "inline-flex" }}
@@ -61,6 +68,7 @@ export default function Navbar() {
             color={"white"}
             bg={"gray"}
             href={"#"}
+            mt={2}
             _hover={{
               bg: "gray",
             }}
