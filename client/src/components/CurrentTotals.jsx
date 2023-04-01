@@ -13,7 +13,7 @@ import { useContext } from "react";
 import { SiEthereum } from "react-icons/si";
 import { VscChevronRight } from "react-icons/vsc";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
-import { BiTimeFive } from "react-icons/Bi";
+import { BiTimeFive } from "react-icons/bi";
 import PayForm from "./PayForm";
 import AddToBalanceForm from "./AddToBalanceForm";
 import { BlockchainContext } from "../context/BlockchainContext";
