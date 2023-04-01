@@ -1,11 +1,11 @@
 import React from "react";
 import { ToastContainer } from "react-toastify";
-import bike1 from "../assets/Bike1.png";
-import bike2 from "../assets/Bike2.png";
-import bike3 from "../assets/Bike3.png";
-import bike4 from "../assets/Bike4.png";
-import bike5 from "../assets/Bike5.png";
-import bike6 from "../assets/Bike6.png";
+import bike1 from "../assets/bike1.png";
+import bike2 from "../assets/bike2.png";
+import bike3 from "../assets/bike3.png";
+import bike4 from "../assets/bike4.png";
+import bike5 from "../assets/bike5.png";
+import bike6 from "../assets/bike6.png";
 import Bike from "./Bike";
 import "react-toastify/dist/ReactToastify.css";
 
