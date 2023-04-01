@@ -90,7 +90,7 @@ const Bike = ({ bike }) => {
   return (
     <>
       <Box boxSize="sm" mx={2}>
-        <Image src={bike.image} mb={10} className="h-60 w-max lg:h-80 " />
+        <Image src={bike.image} mb={10} className="h-52 w-max lg:h-80 " />
         <Text textAlign={"center"} fontWeight={600} fontSize={"xl"}>
           {bike.name}
         </Text>
