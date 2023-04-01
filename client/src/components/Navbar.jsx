@@ -52,9 +52,9 @@ export default function Navbar() {
             fontSize={"2xl"}
           >
             {renter !== null ? (
-              <Link to="/dashboard">BikeChain</Link>
+              <Link to="/dashboard">ChainReact</Link>
             ) : (
-              <Link to="/">BikeChain</Link>
+              <Link to="/">ChainReact</Link>
             )}
           </Text>
         </Flex>
