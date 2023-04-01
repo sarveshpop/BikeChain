@@ -51,7 +51,7 @@ const Rides = () => {
 
   return (
     <div className="flex justify-center items-center px-4 ">
-      <div className="grid grid-cols-1 gap-x-64 gap-y-60 sm:grid-cols-3">
+      <div className="grid grid-cols-1 gap-x-40 lg:gap-x-64 gap-y-60 sm:grid-cols-3">
         {React.Children.toArray(
           bikes?.map((bike, i) => (
             <div className="my-20">
