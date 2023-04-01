@@ -91,11 +91,11 @@ const Bike = ({ bike }) => {
     <>
       <Box boxSize="sm" mx={2}>
         <Image src={bike.image} mb={10} className="h-52 w-max lg:h-80 " />
-        <Text textAlign={"center"} fontWeight={600} fontSize={"xl"}>
+        <Text textAlign={"center"} fontWeight={600} fontSize={{base: "lg", lg: "xl"}}>
           {bike.name}
         </Text>
         <br />
-        <Text textAlign={"center"}>{bike.description}</Text>
+        <Text textAlign={"center"} fontSize={{base: "sm", lg: "md"}}>{bike.description}</Text>
         <Stack
           spacing={4}
           direction={"row"}
