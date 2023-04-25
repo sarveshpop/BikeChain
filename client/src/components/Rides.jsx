@@ -12,40 +12,40 @@ import "react-toastify/dist/ReactToastify.css";
 const Rides = () => {
   const bikes = [
     {
-      name: "Lekker Amsterdam GT",
+      name: "JoyE Hurricane",
       image: bike1,
       description:
-        "The Lekker Amsterdam GT is a stylish and high-performance urban bike with a lightweight aluminum frame, a 8-speed Shimano Alfine internal hub, and hydraulic disc brakes.",
+        "The JoyE Hurricane is a stylish and high-performance urban bike with a lightweight aluminum frame, a 8-speed Shimano Alfine internal hub, and hydraulic disc brakes.",
     },
     {
-      name: "Lekker Amsterdam",
+      name: "Oben Rorr",
       image: bike2,
       description:
-        "Lekker Amsterdam is a stylish and functional urban bike that's designed to tackle the challenges of city cycling. this bike is perfect for commuting or leisurely rides through the city.",
+        "Oben Rorr is a stylish and functional urban bike that's designed to tackle the challenges of city cycling. this bike is perfect for commuting or leisurely rides through the city.",
     },
     {
-      name: "Lekker Amsterdam+",
+      name: "Revolt RV400",
       image: bike3,
       description:
-        "The Lekker Amsterdam+ is a stylish and comfortable urban bike that features premium components and accessories, and a sleek, minimalist design that is both practical and eye-catching.",
+        "The Revolt RV400 is a stylish and comfortable urban bike that features premium components and accessories, and a sleek, minimalist design that is both practical and eye-catching.",
     },
     {
-      name: "Triad E3",
+      name: "Okinawa I Praise",
       image: bike4,
       description:
-        "The Triad E3 is a MTB focused Electric Bicycle which can be used on City Roads and Flat trails as well. It has a massive 80mm Suspension Fork providing a smooth and comfortable ride even on rough terrain.",
+        "The Okinawa I Praise is a MTB focused Electric Bicycle which can be used on City Roads and Flat trails as well. It has a massive 80mm Suspension Fork providing a smooth and comfortable ride even on rough terrain.",
     },
     {
-      name: "Ghost E-Teru Essential",
+      name: "Ola S1 Pro",
       image: bike5,
       description:
-        "The Ghost E-Teru is an e-bike designed for urban commuting and daily use. It features a lightweight aluminum frame and a powerful electric motor that provides a smooth and efficient ride.",
+        "The Ola S1 Pro is an e-bike designed for urban commuting and daily use. It features a lightweight aluminum frame and a powerful electric motor that provides a smooth and efficient ride.",
     },
     {
-      name: "Fuji Jari 11",
+      name: "Aether 450X",
       image: bike6,
       description:
-        "The Fuji Jari 11 is a lightweight, high-performance gravel bike with top-of-the-line components and versatile capabilities on different terrains without a sweat.",
+        "The Aether 450X is a high-performance gravel bike with top-of-the-line components and versatile capabilities on different terrains without a sweat.",
     },
   ];
 
