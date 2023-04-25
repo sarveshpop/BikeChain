@@ -53,7 +53,7 @@ contract ChainReact {
 
     }
 
-    // Check in bike
+    // Return bike
     function checkIn(address walletAddress) public isRenter(walletAddress) {
         require(renters[walletAddress].active == true, "Please check out a bike first.");
         renters[walletAddress].active = false;
