@@ -33,7 +33,7 @@ const Rides = () => {
       name: "Okinawa I Praise",
       image: bike4,
       description:
-        "The Okinawa I Praise is a MTB focused Electric Bicycle which can be used on City Roads and Flat trails as well. It has a massive 80mm Suspension Fork providing a smooth and comfortable ride even on rough terrain.",
+        "The Okinawa I Praise is an E-Bike which can be used on city Roads and flat trails as well. It has a massive 80mm Suspension Fork providing a smooth and comfortable ride even on rough terrain.",
     },
     {
       name: "Ola S1 Pro",
